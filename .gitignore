@@ -1,0 +1,38 @@
+## Angular ##
+# compiled output
+./**/package-lock.json
+./**/dist/
+./**/tmp/
+./**/app/**/*.js
+./**/app/**/*.js.map
+
+#Visual Studio Code
+./**/.vscode
+
+# dependencies
+./**/node_modules/
+
+# CSharp
+./**/.vs
+./**/[Bb]in/
+./**/[Oo]bj/
+./**/*.csproj.user
+
+# NuGet Packages
+*.nupkg
+*.snupkg
+**/[Pp]ackages/*
+!**/[Pp]ackages/build/
+*.nuget.props
+*.nuget.targets
+
+./**/.idea
+
+bin/
+obj/
+/packages/
+riderModule.iml
+/_ReSharper.Caches/
+
+curso-mvc/bin/Debug/net5.0/ref/curso-mvc.dll
+curso-mvc/bin/Debug/net5.0/curso-mvc.Views.dll
