@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\thone\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\thone\\.nuget\\packages"
+    ]
+  }
+}

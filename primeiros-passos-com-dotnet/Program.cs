@@ -36,8 +36,22 @@ namespace primeiros_passos_com_dotnet
                         ListarAlunos(alunos);
                         break;
                     case "3":
+                        var media = CalcularMedia(alunos);
+                        string conceito;
+                        if (media < 2)
+                            conceito = Conceito.E.ToString();
+                        else if (media < 4)
+                            conceito = Conceito.D.ToString();
+                        else if (media < 6)
+                            conceito = Conceito.C.ToString();
+                        else if (media < 8)
+                            conceito = Conceito.B.ToString();
+                        else
+                            conceito = Conceito.A.ToString();
+                            
+                        
                         Console.WriteLine($"--------------------------");
-                        Console.WriteLine($"media geral dos alunos {CalcularMedia(alunos)}");
+                        Console.WriteLine($"media geral dos alunos {media} - Conceito {conceito}");
                         Console.WriteLine($"--------------------------");
                         break;
                     default:
