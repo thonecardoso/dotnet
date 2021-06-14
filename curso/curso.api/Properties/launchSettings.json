@@ -20,7 +20,7 @@
     "curso.api": {
       "commandName": "Project",
       "dotnetRunMessages": "true",
-      "launchBrowser": true,
+      "launchBrowser": false,
       "launchUrl": "index.html",
       "applicationUrl": "https://localhost:44360",
       "environmentVariables": {

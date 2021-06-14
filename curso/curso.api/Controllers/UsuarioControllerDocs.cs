@@ -13,10 +13,10 @@ namespace curso.api.Controllers
         IActionResult Logar(LoginViewModelInput loginViewModelInput);
 
         /// <summary>
-        /// Teste
+        /// Este serviço permite registrar um usuário.
         /// </summary>
-        /// <param name="registroViewModelInput"></param>
-        /// <returns></returns>
+        /// <param name="registroViewModelInput">View model do registro</param>
+        /// <returns>Retorna stratus created e dados do usuario em caso de sucesso</returns>
         IActionResult Logar(RegistroViewModelInput registroViewModelInput);
     }
 
