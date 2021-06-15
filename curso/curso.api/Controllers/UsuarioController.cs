@@ -1,8 +1,13 @@
+using System;
+using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
+using System.Security.Claims;
+using System.Text;
 using curso.api.Filters;
 using curso.api.Models;
 using curso.api.Models.Usuario;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.IdentityModel.Tokens;
 using Swashbuckle.AspNetCore.Annotations;
 
 namespace curso.api.Controllers
@@ -26,7 +31,39 @@ namespace curso.api.Controllers
             //         .Select(s => s.ErrorMessage)));
             // }
 
-            return Ok(loginViewModelInput);
+            var usuarioVieModelOutput = new UsuarioViewModelOutput()
+            {
+                Codigo = 1,
+                Login = "thonecardoso",
+                Email = "thonecardoso@gmail.com"
+            };
+
+            var secret = Encoding.ASCII.GetBytes("MySecretMySecretMySecretMySecretMySecretMySecretMySecretMySecretMySecretMySecretMySecretMySecret");
+            var symmetricSecurityKey = new SymmetricSecurityKey(secret);
+            var securityTokenDescriptor = new SecurityTokenDescriptor
+            {
+                Subject = new ClaimsIdentity(new[]
+                {
+                    new Claim(ClaimTypes.NameIdentifier, usuarioVieModelOutput.Codigo.ToString()),
+                    new Claim(ClaimTypes.Name, usuarioVieModelOutput.Login.ToString()),
+                    new Claim(ClaimTypes.Email, usuarioVieModelOutput.Email.ToString()),
+                }),
+                Expires = DateTime.UtcNow.AddDays(1),
+                SigningCredentials =
+                    new SigningCredentials(symmetricSecurityKey, SecurityAlgorithms.HmacSha256Signature)
+            };
+            var jwtSecurityTokenHandler = new JwtSecurityTokenHandler();
+            var tokenGenerated = jwtSecurityTokenHandler.CreateToken(securityTokenDescriptor);
+            var token = jwtSecurityTokenHandler.WriteToken(tokenGenerated);
+
+
+            return Ok(
+                new
+                {
+                    Token = token,
+                    UsuarioViewModelOutput = usuarioVieModelOutput
+                }
+            );
         }
 
         [SwaggerResponse(statusCode: 201, description: "Sucesso ao criar registro",
@@ -39,13 +76,12 @@ namespace curso.api.Controllers
         [ValidacaoModelStateCustomizado]
         public IActionResult Logar(RegistroViewModelInput registroViewModelInput)
         {
-            
             // if (!ModelState.IsValid)
             // {
             //     return BadRequest(new ValidaCampoViewModelOutput(ModelState.SelectMany(sm => sm.Value.Errors)
             //         .Select(s => s.ErrorMessage)));
             // }
-            
+
             return Created("", registroViewModelInput);
         }
     }
