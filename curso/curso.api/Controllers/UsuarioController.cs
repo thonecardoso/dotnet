@@ -3,10 +3,13 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Security.Claims;
 using System.Text;
+using curso.api.Business.Entities;
 using curso.api.Filters;
+using curso.api.Infraestruture.Data;
 using curso.api.Models;
 using curso.api.Models.Usuario;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Swashbuckle.AspNetCore.Annotations;
 
@@ -76,11 +79,24 @@ namespace curso.api.Controllers
         [ValidacaoModelStateCustomizado]
         public IActionResult Logar(RegistroViewModelInput registroViewModelInput)
         {
-            // if (!ModelState.IsValid)
-            // {
-            //     return BadRequest(new ValidaCampoViewModelOutput(ModelState.SelectMany(sm => sm.Value.Errors)
-            //         .Select(s => s.ErrorMessage)));
-            // }
+            var optionsBuilder = new DbContextOptionsBuilder<CursoDbContext>();
+            optionsBuilder.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=dotnetarquitetura;Integrated Security=True");
+            CursoDbContext contexto = new CursoDbContext(optionsBuilder.Options);
+
+            var migracoesPendentes = contexto.Database.GetPendingMigrations();
+
+            if (migracoesPendentes.Count() > 0)
+            {
+                contexto.Database.Migrate();
+            }
+
+            var usuario = new Usuario();
+            usuario.Email = registroViewModelInput.Email;
+            usuario.Login = registroViewModelInput.Login;
+            usuario.Senha = registroViewModelInput.Senha;
+
+            contexto.Usuarios.Add(usuario);
+            contexto.SaveChanges();
 
             return Created("", registroViewModelInput);
         }
