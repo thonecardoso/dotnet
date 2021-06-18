@@ -51,7 +51,7 @@ namespace AspNetApi.Controllers
                 return BadRequest();
             }
 
-            _context.Entry(categoria).State = EntityState.Modified;
+            _context.SetModified(categoria);
 
             try
             {

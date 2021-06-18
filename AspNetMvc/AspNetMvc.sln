@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetMvc", "AspNetMvc\AspN
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetApi", "AspNetApi\AspNetApi.csproj", "{29CA35C8-C2C7-40F5-81C9-3E4C8ED06B26}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspTest", "AspTest\AspTest.csproj", "{C8B2D8DF-F854-4A07-A5F3-227D117ED9B7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{29CA35C8-C2C7-40F5-81C9-3E4C8ED06B26}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{29CA35C8-C2C7-40F5-81C9-3E4C8ED06B26}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{29CA35C8-C2C7-40F5-81C9-3E4C8ED06B26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8B2D8DF-F854-4A07-A5F3-227D117ED9B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8B2D8DF-F854-4A07-A5F3-227D117ED9B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8B2D8DF-F854-4A07-A5F3-227D117ED9B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8B2D8DF-F854-4A07-A5F3-227D117ED9B7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
