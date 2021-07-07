@@ -8,7 +8,7 @@
         public double Salario { get; set; }
 
 
-        public double GetBonificacao()
+        public virtual double GetBonificacao()
         {
             return Salario * .10;
         }
