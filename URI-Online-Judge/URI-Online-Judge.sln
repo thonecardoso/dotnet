@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1001-Extremamente-Basico", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1002-Area-do-Circulo", "1002-Area-do-Circulo\1002-Area-do-Circulo.csproj", "{B1FEB262-FEC2-4929-892C-08D4720DE9CE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1004-Produto-Simples", "1004-Produto-Simples\1004-Produto-Simples.csproj", "{0F8AF7F3-6A8C-4C3E-BFFF-7ED8A682DE42}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{B1FEB262-FEC2-4929-892C-08D4720DE9CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B1FEB262-FEC2-4929-892C-08D4720DE9CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B1FEB262-FEC2-4929-892C-08D4720DE9CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F8AF7F3-6A8C-4C3E-BFFF-7ED8A682DE42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F8AF7F3-6A8C-4C3E-BFFF-7ED8A682DE42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F8AF7F3-6A8C-4C3E-BFFF-7ED8A682DE42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F8AF7F3-6A8C-4C3E-BFFF-7ED8A682DE42}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
