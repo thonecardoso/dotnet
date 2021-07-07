@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-ByteBank", "01-ByteBank\01-ByteBank.csproj", "{AB1D4074-7DA9-45C4-998A-BEAF636631C5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01-ByteBank", "01-ByteBank\01-ByteBank.csproj", "{AB1D4074-7DA9-45C4-998A-BEAF636631C5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-ByteBank", "02-ByteBank\02-ByteBank.csproj", "{7AD86A71-A8E5-47D3-BBC3-97AFD5F070C5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02-ByteBank", "02-ByteBank\02-ByteBank.csproj", "{7AD86A71-A8E5-47D3-BBC3-97AFD5F070C5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-ByteBank", "03-ByteBank\03-ByteBank.csproj", "{13C368DD-3041-4178-A99E-CD7CC7D7001C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03-ByteBank", "03-ByteBank\03-ByteBank.csproj", "{13C368DD-3041-4178-A99E-CD7CC7D7001C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-ByteBank", "04-ByteBank\04-ByteBank.csproj", "{E067EF7F-4662-42FE-AB69-0B8CB9D7465D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04-ByteBank", "04-ByteBank\04-ByteBank.csproj", "{E067EF7F-4662-42FE-AB69-0B8CB9D7465D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05-ByteBank", "05-ByteBank\05-ByteBank.csproj", "{BD5BC599-C1B0-43D7-ADF2-D5A2B2EADE21}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{E067EF7F-4662-42FE-AB69-0B8CB9D7465D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E067EF7F-4662-42FE-AB69-0B8CB9D7465D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E067EF7F-4662-42FE-AB69-0B8CB9D7465D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD5BC599-C1B0-43D7-ADF2-D5A2B2EADE21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD5BC599-C1B0-43D7-ADF2-D5A2B2EADE21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD5BC599-C1B0-43D7-ADF2-D5A2B2EADE21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD5BC599-C1B0-43D7-ADF2-D5A2B2EADE21}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

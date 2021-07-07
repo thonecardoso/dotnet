@@ -61,11 +61,7 @@ namespace curso.api.Controllers
             );
         }
 
-        [SwaggerResponse(statusCode: 201, description: "Sucesso ao criar registro",
-            Type = typeof(RegistroViewModelInput))]
-        [SwaggerResponse(statusCode: 400, description: "Campos Obrigatórios",
-            Type = typeof(ValidaCampoViewModelOutput))]
-        [SwaggerResponse(statusCode: 500, description: "Erro Interno", Type = typeof(ErroGenericoViewModel))]
+
         [HttpPost]
         [Route("registrar")]
         [ValidacaoModelStateCustomizado]

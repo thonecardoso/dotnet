@@ -1,5 +1,7 @@
-﻿using curso.api.Models.Usuario;
+﻿using curso.api.Models;
+using curso.api.Models.Usuario;
 using Microsoft.AspNetCore.Mvc;
+using Swashbuckle.AspNetCore.Annotations;
 
 namespace curso.api.Controllers
 {
@@ -17,6 +19,11 @@ namespace curso.api.Controllers
         /// </summary>
         /// <param name="registroViewModelInput">View model do registro</param>
         /// <returns>Retorna stratus created e dados do usuario em caso de sucesso</returns>
+        [SwaggerResponse(statusCode: 201, description: "Sucesso ao criar registro",
+            Type = typeof(RegistroViewModelInput))]
+        [SwaggerResponse(statusCode: 400, description: "Campos Obrigatórios",
+            Type = typeof(ValidaCampoViewModelOutput))]
+        [SwaggerResponse(statusCode: 500, description: "Erro Interno", Type = typeof(ErroGenericoViewModel))]
         IActionResult Logar(RegistroViewModelInput registroViewModelInput);
     }
 
