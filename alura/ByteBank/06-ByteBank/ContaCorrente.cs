@@ -11,46 +11,61 @@ namespace _06_ByteBank
         public Cliente titular;
         public int agencia;
         public int numero;
-        private double saldo = 100;
+        private double _saldo = 100;
 
-        public void DefinirSaldo(double saldo)
+        public double Saldo
         {
-            if(saldo >= 0)
+            get
             {
-                this.saldo = saldo;
+                return _saldo;
+            }
+            set
+            {
+                if (value >= 0)
+                {
+                    _saldo = value;
+                }
             }
         }
 
-        public double ObterSaldo()
+        public void SetSaldo(double saldo)
         {
-            return this.saldo;
+            if(saldo >= 0)
+            {
+                this._saldo = saldo;
+            }
+        }
+
+        public double GetSaldo()
+        {
+            return this._saldo;
         }
 
         public bool Sacar(double valor)
         {
-            if(this.saldo < valor)
+            if(this._saldo < valor)
             {
                 return false;
             }
             
-            this.saldo -= valor;
+            this._saldo -= valor;
             return true;
             
         }
 
         public void Depositar(double valor)
         {
-            this.saldo += valor;
+            this._saldo += valor;
         }
 
         public bool Transferir(double valor, ContaCorrente contaDestino)
         {
-            if (this.saldo < valor)
+            if (this._saldo < valor)
             {
                 return false;
             }
             
-            this.saldo -= valor;
+            this._saldo -= valor;
             contaDestino.Depositar(valor);
             return true;
             
