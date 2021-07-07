@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1000-HelloWorld", "1000-Hel
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1001-Extremamente-Basico", "1001-Extremamente-Basico\1001-Extremamente-Basico.csproj", "{F74045D7-6A03-4AA5-A902-42A495E8BFFB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1002-Area-do-Circulo", "1002-Area-do-Circulo\1002-Area-do-Circulo.csproj", "{B1FEB262-FEC2-4929-892C-08D4720DE9CE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{F74045D7-6A03-4AA5-A902-42A495E8BFFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F74045D7-6A03-4AA5-A902-42A495E8BFFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F74045D7-6A03-4AA5-A902-42A495E8BFFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1FEB262-FEC2-4929-892C-08D4720DE9CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1FEB262-FEC2-4929-892C-08D4720DE9CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1FEB262-FEC2-4929-892C-08D4720DE9CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1FEB262-FEC2-4929-892C-08D4720DE9CE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
