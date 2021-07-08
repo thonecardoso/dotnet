@@ -3,7 +3,7 @@ using ByteBank.Sistemas;
 
 namespace ByteBank.Funcionarios
 {
-    public class Diretor : Autenticavel
+    public class Diretor : FuncionarioAutenticavel
     {
         public override double GetBonificacao()
         {
