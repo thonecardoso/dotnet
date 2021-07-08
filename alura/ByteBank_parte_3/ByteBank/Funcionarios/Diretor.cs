@@ -1,8 +1,9 @@
 ﻿using System;
+using ByteBank.Sistemas;
 
 namespace ByteBank.Funcionarios
 {
-    public class Diretor : Funcionario
+    public class Diretor : Autenticavel
     {
         public override double GetBonificacao()
         {
