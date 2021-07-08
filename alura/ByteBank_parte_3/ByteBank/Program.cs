@@ -7,37 +7,34 @@ namespace ByteBank
     {
         static void Main(string[] args)
         {
-            GerenciadorBonificacao gerenciador = new GerenciadorBonificacao();
-            
-            Funcionario carlos = new Funcionario();
+            CalcularBonificacao();
 
-            carlos.Nome = "Carlos";
-            carlos.Salario = 2000;
-            carlos.CPF = "123.123.123-12";
-            
-            gerenciador.Registrar(carlos);
+        }
 
-            Diretor roberta = new Diretor();
+        public static void CalcularBonificacao()
+        {
+            GerenciadorBonificacao gerenciadorBonificacao = new GerenciadorBonificacao();
+
+            Designer pedro = new Designer("888.888.888-88");
+            pedro.Nome = "Pedro";
+
+            Diretor roberta = new Diretor("777.777.777-77");
             roberta.Nome = "Roberta";
-            roberta.CPF = "123.123.321-23";
-            roberta.Salario = 5000;
 
-            Funcionario robertaTeste = roberta;
+            Auxiliar igor = new Auxiliar("666.666.666-66");
+            igor.Nome = "Igor";
+
+            GerenteDeConta camila = new GerenteDeConta("555.555.555-55");
+            camila.Nome = "Camila";
             
-            Console.WriteLine("Bonificação de uma referencia de Funcionario: " + robertaTeste.GetBonificacao());
-            Console.WriteLine("Bonificação de uma referencia de Diretor: " + roberta.GetBonificacao());
-            
-            gerenciador.Registrar(roberta);
-            
-            Console.WriteLine(roberta.Nome);
-            Console.WriteLine(roberta.GetBonificacao());
-                
-            
-            Console.WriteLine(carlos.Nome);
-            Console.WriteLine(carlos.GetBonificacao());
-            
-            Console.WriteLine("Total de Bonificação a ser pagas: R$" + gerenciador.GetTotalBonificacao());
-            
+            gerenciadorBonificacao.Registrar(pedro);
+            gerenciadorBonificacao.Registrar(roberta);
+            gerenciadorBonificacao.Registrar(igor);
+            gerenciadorBonificacao.Registrar(camila);
+
+            var total = gerenciadorBonificacao.GetTotalBonificacao();
+            Console.WriteLine($"\nBonificação paga aos Funcionários R${total:f2}");
+            Console.WriteLine($"Total Funcionários Registrados: {Funcionario.TotalFuncionarios}");
         }
     }
 }
