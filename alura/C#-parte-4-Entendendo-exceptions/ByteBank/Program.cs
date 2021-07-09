@@ -10,13 +10,15 @@ namespace ByteBank
     {
         static void Main(string[] args)
         {
-
-            ContaCorrente conta;
-            
             try
             {
                 //Metodo();
-                conta = new ContaCorrente(0, 9);
+                ContaCorrente conta = new ContaCorrente(456, 4578420);
+                ContaCorrente conta2 = new ContaCorrente(456, 4578020);
+
+                conta.Depositar(50);
+                Console.WriteLine(conta.Saldo);
+                conta2.Transferir(-500, conta);
             }
             catch (DivideByZeroException e)
             {
@@ -25,9 +27,13 @@ namespace ByteBank
             catch (ArgumentException  e)
             {
                 Console.WriteLine(e.Message);
+                // Console.WriteLine(e.StackTrace);
+                // Console.WriteLine(e.ParamName);
+                // Console.WriteLine("Aconteceu um erro!");
+            }catch (SaldoInsuficienteException  e)
+            {
+                Console.WriteLine(e.Message);
                 Console.WriteLine(e.StackTrace);
-                Console.WriteLine(e.ParamName);
-                Console.WriteLine("Aconteceu um erro!");
             }
 
             
