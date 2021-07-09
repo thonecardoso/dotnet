@@ -10,32 +10,34 @@ namespace ByteBank
     {
         static void Main(string[] args)
         {
+            ContaCorrente conta1 = new ContaCorrente(4564, 789684);
+            ContaCorrente conta2 = new ContaCorrente(7891, 456794);
+            
             try
             {
-                //Metodo();
-                ContaCorrente conta = new ContaCorrente(456, 4578420);
-                ContaCorrente conta2 = new ContaCorrente(456, 4578020);
-
-                conta.Depositar(50);
-                Console.WriteLine(conta.Saldo);
-                conta2.Transferir(-500, conta);
+               // conta1.Transferir(10000, conta2);
+                conta1.Transferir(101, conta2);
             }
-            catch (DivideByZeroException e)
-            {
-                Console.WriteLine("Não é possível divisão por zero.");
-            }
-            catch (ArgumentException  e)
+            catch (Exception e)
             {
                 Console.WriteLine(e.Message);
-                // Console.WriteLine(e.StackTrace);
-                // Console.WriteLine(e.ParamName);
-                // Console.WriteLine("Aconteceu um erro!");
-            }catch (SaldoInsuficienteException  e)
-            {
-                Console.WriteLine(e.Message);
+                Console.WriteLine(e.InnerException.Message);
+                Console.WriteLine(e.InnerException.StackTrace);
                 Console.WriteLine(e.StackTrace);
+                
             }
 
+            try
+            {
+                conta1.Sacar(1);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            
+            Console.WriteLine(conta1.ContadorSaquesNaoPermitidos);
+            Console.WriteLine(conta1.ContadorTransferenciasNaoPermitidas);
             
         }
 
