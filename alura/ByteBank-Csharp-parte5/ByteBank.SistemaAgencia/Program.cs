@@ -7,8 +7,15 @@ namespace ByteBank.SistemaAgencia
     {
         static void Main(string[] args)
         {
-            ContaCorrente contaCorrente = new ContaCorrente(847, 883929);
-            Console.WriteLine(contaCorrente.Numero);
+            string url = "pagina?argumentos";
+            int indiceInterrogacao = url.IndexOf('?');
+            var argumentos = url.Substring(indiceInterrogacao + 1).Split('&');
+            Console.WriteLine(url[indiceInterrogacao]);
+
+            for (int i = 0; i < argumentos.Length; i++)
+            {
+            Console.WriteLine(argumentos[i].Split('=')[1]);    
+            }
             Console.ReadLine();
         }
     }
