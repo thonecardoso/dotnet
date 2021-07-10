@@ -9,6 +9,7 @@ namespace ByteBank.SistemaAgencia
         {
             ContaCorrente contaCorrente = new ContaCorrente(847, 883929);
             Console.WriteLine(contaCorrente.Numero);
+            Console.ReadLine();
         }
     }
 }
