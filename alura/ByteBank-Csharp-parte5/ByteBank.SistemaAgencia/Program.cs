@@ -1,4 +1,5 @@
 ﻿using System;
+using ByteBank.Modelos;
 
 namespace ByteBank.SistemaAgencia
 {
@@ -6,7 +7,8 @@ namespace ByteBank.SistemaAgencia
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            ContaCorrente contaCorrente = new ContaCorrente(847, 883929);
+            Console.WriteLine(contaCorrente.Numero);
         }
     }
 }
