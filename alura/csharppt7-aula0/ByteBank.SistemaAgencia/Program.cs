@@ -13,6 +13,28 @@ namespace ByteBank.SistemaAgencia
         static void Main(string[] args)
         {
            
+            List<int> idades = new List<int>();
+
+            idades.Add(10);
+            idades.Add(5);
+            idades.Add(4);
+            
+            ListExtensoes.AdicionarVarios(idades, 1, 5687, 1987, 1567, 987);
+            
+            idades.AdicionarVarios(3, 4 ,4,4,4,4);
+            
+            for(int i = 0; i < idades.Count; i++)
+            {
+                int idade = (int)idades[i];
+                Console.WriteLine($"Idade no indice {i}: {idade}");
+            }
+            
+            
+            Console.ReadLine();
+        }
+
+        static void ListaGenerica()
+        {
             Lista<int> listaDeIdades = new Lista<int>();
 
             listaDeIdades.Adicionar(10);
@@ -25,11 +47,8 @@ namespace ByteBank.SistemaAgencia
                 int idade = (int)listaDeIdades[i];
                 Console.WriteLine($"Idade no indice {i}: {idade}");
             }
-            
-            
-            Console.ReadLine();
         }
-
+        
         static void TesteArray3()
         {
             
