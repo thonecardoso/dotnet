@@ -7,15 +7,27 @@ namespace ByteBank.SistemaAgencia
     {
         static void Main(string[] args)
         {
-            string url = "pagina?argumentos";
-            int indiceInterrogacao = url.IndexOf('?');
-            var argumentos = url.Substring(indiceInterrogacao + 1).Split('&');
-            Console.WriteLine(url[indiceInterrogacao]);
+            string urlTeste = "https://www.bytebank.com/cambio";
+            
+            Console.WriteLine(urlTeste.StartsWith("https://www.bytebank.com"));
+            Console.WriteLine(urlTeste.EndsWith("cambio"));
 
-            for (int i = 0; i < argumentos.Length; i++)
-            {
-            Console.WriteLine(argumentos[i].Split('=')[1]);    
-            }
+            Console.WriteLine(urlTeste.Contains("bytebank"));
+        }
+
+        public static void Teste1()
+        {
+            string urlParametros = "http://www.bytebank.com/cambio?moedaOrigem=real&moedaDestino=dolar&valor=1500";
+            ExtratorValorDeArgumentosURL extratorDeValores = new ExtratorValorDeArgumentosURL(urlParametros);
+
+            string valor = extratorDeValores.GetValor("moedaDestino");
+            Console.WriteLine("Valor de moedaDestino: " + valor);
+
+            string valorMoedaOrigem = extratorDeValores.GetValor("moedaOrigem");
+            Console.WriteLine("Valor de moedaOrigem: " + valorMoedaOrigem);
+
+            Console.WriteLine(extratorDeValores.GetValor("valor"));
+
             Console.ReadLine();
         }
     }
