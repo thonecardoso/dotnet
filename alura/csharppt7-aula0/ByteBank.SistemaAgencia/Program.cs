@@ -11,9 +11,33 @@ namespace ByteBank.SistemaAgencia
         
         static void Main(string[] args)
         {
+
+
+            ListadeContas();
             
-           
-            List<int> idades = new List<int>();
+            
+            Console.ReadLine();
+        }
+
+
+
+        static void ListadeContas()
+        {
+            var contas = new List<ContaCorrente>()
+            {
+                new ContaCorrente(453, 1234),
+                new ContaCorrente(453, 5434),
+                new ContaCorrente(453, 1874),
+                new ContaCorrente(453, 0934),
+                new ContaCorrente(453, 2334),
+                new ContaCorrente(453, 1134),
+            };
+        }
+        
+        
+        static void ListGenerica()
+        {
+            var idades = new List<int>();
 
             idades.Add(10);
             idades.Add(5);
@@ -21,18 +45,42 @@ namespace ByteBank.SistemaAgencia
             
             ListExtensoes.AdicionarVarios(idades, 1, 5687, 1987, 1567, 987);
             
-            idades.AdicionarVarios(3, 4 ,4,4,4,4);
+            idades.AdicionarVarios(3, 4 ,5,2,1);
+            
+            idades.Sort();
             
             for(int i = 0; i < idades.Count; i++)
             {
                 int idade = (int)idades[i];
                 Console.WriteLine($"Idade no indice {i}: {idade}");
             }
-            
-            
-            Console.ReadLine();
-        }
 
+
+            var nomes = new List<string>()
+            {
+                "ana",
+                "ricardo",
+                "paulo",
+                "danilo",
+                "abadia",
+                "luana",
+                "inácia"
+            };
+
+            nomes.Sort();
+            
+            
+            foreach (var nome in nomes)
+            {
+                  Console.WriteLine(nome);  
+            }
+
+
+
+
+
+        }
+        
         static void ListaGenerica()
         {
             Lista<int> listaDeIdades = new Lista<int>();
