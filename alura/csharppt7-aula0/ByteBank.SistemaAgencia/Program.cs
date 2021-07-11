@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using ByteBank.Modelos;
 using ByteBank.Modelos.Comparadores;
 using ByteBank.SistemaAgencia.Extensoes;
@@ -25,16 +26,29 @@ namespace ByteBank.SistemaAgencia
                 new ContaCorrente(453, 5434),
                 new ContaCorrente(433, 1874),
                 new ContaCorrente(233, 0934),
+                null,
                 new ContaCorrente(111, 2334),
                 new ContaCorrente(453, 1134),
             };
 
             // contas.Sort();
-            contas.Sort(new ComparadorContaCorrentePorAgencia());
-
-            foreach (var conta in contas)
+            //contas.Sort(new ComparadorContaCorrentePorAgencia());
+            var teste = contas.OrderBy(conta =>
             {
-                Console.WriteLine($"Conta número {conta.Numero:d4}, ag. {conta.Agencia}");
+                if (conta == null)
+                {
+                    return int.MaxValue;
+                }
+                
+                return conta.Agencia;
+            });
+
+            foreach (var conta in teste)
+            {
+                if(conta == null)
+                    Console.WriteLine("null");
+                else
+                    Console.WriteLine($"Conta número {conta.Numero:d4}, ag. {conta.Agencia}");
             }
         }
 
