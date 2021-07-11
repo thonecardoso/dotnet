@@ -7,6 +7,14 @@ namespace ByteBank.SistemaAgencia
     {
         private ContaCorrente[] _itens;
         private int _proximaPosicao;
+        
+        public ContaCorrente this[int indice]
+        {
+            get 
+            {
+                return GetItemNoIndice(indice);
+            }
+        }
 
         public ListaDeContaCorrente(int capacidadeInicial = 5)
         {
@@ -16,11 +24,19 @@ namespace ByteBank.SistemaAgencia
         public void Adicionar(ContaCorrente item)
         {
             VerificarCapacidade(_proximaPosicao);
-            Console.WriteLine($"Adicionando item na posição {_proximaPosicao}");
+            //Console.WriteLine($"Adicionando item na posição {_proximaPosicao}");
             
            _itens[_proximaPosicao] = item;
             _proximaPosicao++;
         } 
+        
+        public void AdicionarVarios(params ContaCorrente[] itens)
+        {
+            foreach(ContaCorrente conta in itens) 
+            {
+                Adicionar(conta);
+            }
+        }
         
         public void Remover(ContaCorrente item)
         { 
@@ -46,6 +62,24 @@ namespace ByteBank.SistemaAgencia
             _itens[_proximaPosicao] = null;
         } 
         
+        public ContaCorrente GetItemNoIndice(int indice)
+        {
+            if(indice < 0 || indice >= _proximaPosicao)
+            {
+                throw new ArgumentOutOfRangeException(nameof(indice));
+            }
+
+            return _itens[indice];
+        }
+        
+        public int Tamanho 
+        { 
+            get 
+            {
+                return _proximaPosicao; 
+            }
+        } 
+        
         private void VerificarCapacidade(int tamanhoNecessario)
         { 
             if (_itens.Length> tamanhoNecessario)
@@ -56,7 +90,7 @@ namespace ByteBank.SistemaAgencia
             int novoTamanho = _itens.Length * 2;
             
             ContaCorrente[] novoArray = new ContaCorrente[novoTamanho];
-            Console.WriteLine("Aumentando capacidade da lista!");
+            //Console.WriteLine("Aumentando capacidade da lista!");
 
             for(int indice = 0; indice < _itens.Length; indice++)
             { 
