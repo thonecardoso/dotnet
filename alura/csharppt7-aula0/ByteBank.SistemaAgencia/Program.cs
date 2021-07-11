@@ -27,6 +27,9 @@ namespace ByteBank.SistemaAgencia
                 new ContaCorrente(433, 1874),
                 new ContaCorrente(233, 0934),
                 null,
+                null,
+                null,
+                null,
                 new ContaCorrente(111, 2334),
                 new ContaCorrente(453, 1134),
             };
@@ -43,7 +46,9 @@ namespace ByteBank.SistemaAgencia
                 return conta.Agencia;
             });
 
-            foreach (var conta in teste)
+            var listaNaoNulas = contas.Where(c => c != null).OrderBy(c => c.Numero);
+
+            foreach (var conta in listaNaoNulas)
             {
                 if(conta == null)
                     Console.WriteLine("null");
