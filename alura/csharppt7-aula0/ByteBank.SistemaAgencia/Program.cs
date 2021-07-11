@@ -12,6 +12,27 @@ namespace ByteBank.SistemaAgencia
     {
         static void Main(string[] args)
         {
+           
+            Lista<int> listaDeIdades = new Lista<int>();
+
+            listaDeIdades.Adicionar(10);
+            listaDeIdades.Adicionar(5);
+            listaDeIdades.Adicionar(4);
+            listaDeIdades.AdicionarVarios(16, 23, 60);
+            
+            for(int i = 0; i < listaDeIdades.Tamanho; i++)
+            {
+                int idade = (int)listaDeIdades[i];
+                Console.WriteLine($"Idade no indice {i}: {idade}");
+            }
+            
+            
+            Console.ReadLine();
+        }
+
+        static void TesteArray3()
+        {
+            
             ContaCorrente contaDoGui = new ContaCorrente(11111, 1111111);
             
             ContaCorrente[] contas = new ContaCorrente[]
@@ -33,9 +54,7 @@ namespace ByteBank.SistemaAgencia
             }
             
             
-            Console.ReadLine();
         }
-
         static void TesteArray2()
         {
             
