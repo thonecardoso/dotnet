@@ -1,3 +1,5 @@
+
+
 ## Angular ##
 # compiled output
 ./**/package-lock.json
@@ -277,3 +279,5 @@ paket-files/
 # JetBrains Rider
 .idea/
 *.sln.iml
+
+!contas.txt
