@@ -49,16 +49,7 @@ namespace MinhaDemoMVC
 
             app.UseEndpoints(endpoints =>
             {
-                
-                endpoints.MapControllerRoute(
-                    name: "modulos",
-                    pattern: "Gestao/{controller=Home}/{action=Index}/{id?}");
-                
-                endpoints.MapControllerRoute(
-                    name: "categoria",
-                    pattern: "{controller=Home}/{action=Index}/{id}/{categoria?}");
-                
-                endpoints.MapControllerRoute(
+               endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
