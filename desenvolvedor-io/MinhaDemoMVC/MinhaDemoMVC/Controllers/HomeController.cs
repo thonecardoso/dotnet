@@ -9,8 +9,6 @@ using MinhaDemoMVC.Models;
 
 namespace MinhaDemoMVC.Controllers
 {
-    [Route("")]
-    [Route("gestao-clientes")]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
@@ -20,18 +18,32 @@ namespace MinhaDemoMVC.Controllers
             _logger = logger;
         }
 
-        [Route("")]
-        [Route("pagina-inicial")]
-        [Route("pagina-inicial/{id:int}/{categoria:guid}")]
         public IActionResult Index(string id, Guid categoria)
         {
-            return View();
+            var filme = new Filme()
+            {
+                Titulo = "oi",
+                DataLancamento = DateTime.Now,
+                Genero = null,
+                Avaliacao = 10,
+                Valor = 20000
+            };
+
+            return RedirectToAction("Privacy", filme);
+            //return View();
         }
 
-        [Route("privacidade")]
-        [Route("politica-de-privacidade")]
-        public IActionResult Privacy()
+        public IActionResult Privacy(Filme filme)
         {
+            if (ModelState.IsValid)
+            {
+            }
+
+            foreach (var error in ModelState.Values.SelectMany(m => m.Errors))
+            {
+                Console.WriteLine(error.ErrorMessage);
+            }
+
             return View();
         }
 
