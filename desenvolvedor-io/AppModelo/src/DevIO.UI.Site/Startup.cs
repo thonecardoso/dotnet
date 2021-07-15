@@ -38,7 +38,7 @@ namespace DevIO.UI.Site
             });
 
             services.AddDbContext<MeuDbContext>(options => 
-                options.UseSqlServer(Configuration.GetConnectionString("MeuDbContex")));
+                options.UseSqlServer(Configuration.GetConnectionString("MeuDbContext")));
             
             services.AddMvc(options => options.EnableEndpointRouting = false).SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
             
