@@ -3,27 +3,29 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1000-HelloWorld", "1000-HelloWorld\1000-HelloWorld.csproj", "{6404DC6E-D8F3-497D-AD43-CF5C88F42315}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1000-HelloWorld", "1000-HelloWorld\1000-HelloWorld.csproj", "{6404DC6E-D8F3-497D-AD43-CF5C88F42315}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1001-Extremamente-Basico", "1001-Extremamente-Basico\1001-Extremamente-Basico.csproj", "{F74045D7-6A03-4AA5-A902-42A495E8BFFB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1001-Extremamente-Basico", "1001-Extremamente-Basico\1001-Extremamente-Basico.csproj", "{F74045D7-6A03-4AA5-A902-42A495E8BFFB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1002-Area-do-Circulo", "1002-Area-do-Circulo\1002-Area-do-Circulo.csproj", "{B1FEB262-FEC2-4929-892C-08D4720DE9CE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1002-Area-do-Circulo", "1002-Area-do-Circulo\1002-Area-do-Circulo.csproj", "{B1FEB262-FEC2-4929-892C-08D4720DE9CE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1004-Produto-Simples", "1004-Produto-Simples\1004-Produto-Simples.csproj", "{0F8AF7F3-6A8C-4C3E-BFFF-7ED8A682DE42}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1004-Produto-Simples", "1004-Produto-Simples\1004-Produto-Simples.csproj", "{0F8AF7F3-6A8C-4C3E-BFFF-7ED8A682DE42}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1005-Media-1", "1005-Media-1\1005-Media-1.csproj", "{76D8C489-5452-453A-9518-EF271B7E65A0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1005-Media-1", "1005-Media-1\1005-Media-1.csproj", "{76D8C489-5452-453A-9518-EF271B7E65A0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1003-Soma-Simples", "1003-Soma-Simples\1003-Soma-Simples.csproj", "{2D3A90A3-F260-438F-8585-E58B4DBCBCDA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1003-Soma-Simples", "1003-Soma-Simples\1003-Soma-Simples.csproj", "{2D3A90A3-F260-438F-8585-E58B4DBCBCDA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1006-Media-2", "1006-Media-2\1006-Media-2.csproj", "{7B6EAD7A-430F-4E9E-966C-5103AA9301AF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1006-Media-2", "1006-Media-2\1006-Media-2.csproj", "{7B6EAD7A-430F-4E9E-966C-5103AA9301AF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1007-Diferenca", "1007-Diferenca\1007-Diferenca.csproj", "{06A16E15-C017-42DD-B0B2-2A5277C9E8DF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1007-Diferenca", "1007-Diferenca\1007-Diferenca.csproj", "{06A16E15-C017-42DD-B0B2-2A5277C9E8DF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1008-Salario", "1008-Salario\1008-Salario.csproj", "{A343D660-8C4A-4812-8DE3-6BE5F8E4839A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1008-Salario", "1008-Salario\1008-Salario.csproj", "{A343D660-8C4A-4812-8DE3-6BE5F8E4839A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1009-Salario-com-bonus", "1009-Salario-com-bonus\1009-Salario-com-bonus.csproj", "{2D5CB1CD-E5A6-4A74-879F-15C2FFA5C7A5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1009-Salario-com-bonus", "1009-Salario-com-bonus\1009-Salario-com-bonus.csproj", "{2D5CB1CD-E5A6-4A74-879F-15C2FFA5C7A5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1010-Calculo-simples", "1010-Calculo-simples\1010-Calculo-simples.csproj", "{09EE2BC8-551C-4C86-83F6-1BB25085ACEC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1010-Calculo-simples", "1010-Calculo-simples\1010-Calculo-simples.csproj", "{09EE2BC8-551C-4C86-83F6-1BB25085ACEC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1011-Esfera", "1011-Esfera\1011-Esfera.csproj", "{3E983437-8C63-4301-BCF1-391D05C0F090}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +77,10 @@ Global
 		{09EE2BC8-551C-4C86-83F6-1BB25085ACEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{09EE2BC8-551C-4C86-83F6-1BB25085ACEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{09EE2BC8-551C-4C86-83F6-1BB25085ACEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E983437-8C63-4301-BCF1-391D05C0F090}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E983437-8C63-4301-BCF1-391D05C0F090}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E983437-8C63-4301-BCF1-391D05C0F090}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E983437-8C63-4301-BCF1-391D05C0F090}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
