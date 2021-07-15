@@ -25,7 +25,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1009-Salario-com-bonus", "1
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1010-Calculo-simples", "1010-Calculo-simples\1010-Calculo-simples.csproj", "{09EE2BC8-551C-4C86-83F6-1BB25085ACEC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1011-Esfera", "1011-Esfera\1011-Esfera.csproj", "{3E983437-8C63-4301-BCF1-391D05C0F090}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1011-Esfera", "1011-Esfera\1011-Esfera.csproj", "{3E983437-8C63-4301-BCF1-391D05C0F090}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2159-Numero-Aproximado-de-Primos", "2159-Numero-Aproximado-de-Primos\2159-Numero-Aproximado-de-Primos.csproj", "{C6412CF8-FFA0-4E45-A835-7A6C3C367209}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +83,10 @@ Global
 		{3E983437-8C63-4301-BCF1-391D05C0F090}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3E983437-8C63-4301-BCF1-391D05C0F090}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3E983437-8C63-4301-BCF1-391D05C0F090}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6412CF8-FFA0-4E45-A835-7A6C3C367209}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6412CF8-FFA0-4E45-A835-7A6C3C367209}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6412CF8-FFA0-4E45-A835-7A6C3C367209}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6412CF8-FFA0-4E45-A835-7A6C3C367209}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
