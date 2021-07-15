@@ -53,13 +53,13 @@ namespace DevIO.UI.Site
 
             app.UseMvc(routes =>
             {
-                routes.MapRoute("default","{controller=Home}/{action=Index}/{id?}");
-               
-                
                 // routes.MapRoute("areas","{area:exists}/{controller=Home}/{action=Index}/{id?}");
 
                 routes.MapAreaRoute("AreaProdutos", "Produtos", "Produtos/{controller=Cadastro}/{action=Index}/{id?}");
                 routes.MapAreaRoute("AreaVendas", "Vendas", "Vendas/{controller=Pedidos}/{action=Index}/{id?}");
+                
+                
+                routes.MapRoute("default","{controller=Home}/{action=Index}/{id?}");
             });
         }
     }
