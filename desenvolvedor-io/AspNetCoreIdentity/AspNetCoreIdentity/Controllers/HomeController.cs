@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using AspNetCoreIdentity.Extensions;
 using Microsoft.AspNetCore.Authorization;
 
 namespace AspNetCoreIdentity.Controllers
@@ -53,6 +54,12 @@ namespace AspNetCoreIdentity.Controllers
         public IActionResult Secret()
         {
             return View();
+        }
+
+        [ClaimsAuthorize("Produtos", "Ler")]
+        public IActionResult ClaimsCustom()
+        {
+            return View("Secret");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
