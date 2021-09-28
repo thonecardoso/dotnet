@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2396-Corrida", "2396-Corrid
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3004-Envelopes", "3004-Envelopes\3004-Envelopes.csproj", "{F4DDE6F2-F9E8-461F-8EE8-D13B6E73BDE6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2126-Procurando-Subsequencias", "2126-Procurando-Subsequencias\2126-Procurando-Subsequencias.csproj", "{2AF67D08-5A05-4C25-AE31-D49228DD61CE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +101,10 @@ Global
 		{F4DDE6F2-F9E8-461F-8EE8-D13B6E73BDE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F4DDE6F2-F9E8-461F-8EE8-D13B6E73BDE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F4DDE6F2-F9E8-461F-8EE8-D13B6E73BDE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AF67D08-5A05-4C25-AE31-D49228DD61CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AF67D08-5A05-4C25-AE31-D49228DD61CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AF67D08-5A05-4C25-AE31-D49228DD61CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AF67D08-5A05-4C25-AE31-D49228DD61CE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
