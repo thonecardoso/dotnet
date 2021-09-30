@@ -39,7 +39,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3306-Consulta-e-Alteracao",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3166-Procurando-Palavras-na-Diagonal-Principal", "3166-Procurando-Palavras-na-Diagonal-Principal\3166-Procurando-Palavras-na-Diagonal-Principal.csproj", "{0044780C-55E8-460D-A562-A4BD0E2D9561}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3167-Procurando-Palavras-na-Diagonal-Secundaria", "3167-Procurando-Palavras-na-Diagonal-Secundaria\3167-Procurando-Palavras-na-Diagonal-Secundaria.csproj", "{191C23E1-F056-47D2-A9C2-6ED19B773D8B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3167-Procurando-Palavras-na-Diagonal-Secundaria", "3167-Procurando-Palavras-na-Diagonal-Secundaria\3167-Procurando-Palavras-na-Diagonal-Secundaria.csproj", "{191C23E1-F056-47D2-A9C2-6ED19B773D8B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3303-Palavrao", "3303-Palavrao\3303-Palavrao.csproj", "{42C43705-4F90-4D93-8C49-7E68102E7C6E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -123,6 +125,10 @@ Global
 		{191C23E1-F056-47D2-A9C2-6ED19B773D8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{191C23E1-F056-47D2-A9C2-6ED19B773D8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{191C23E1-F056-47D2-A9C2-6ED19B773D8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42C43705-4F90-4D93-8C49-7E68102E7C6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42C43705-4F90-4D93-8C49-7E68102E7C6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42C43705-4F90-4D93-8C49-7E68102E7C6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42C43705-4F90-4D93-8C49-7E68102E7C6E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
