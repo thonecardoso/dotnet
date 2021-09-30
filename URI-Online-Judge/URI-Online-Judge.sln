@@ -35,9 +35,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3004-Envelopes", "3004-Enve
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2126-Procurando-Subsequencias", "2126-Procurando-Subsequencias\2126-Procurando-Subsequencias.csproj", "{2AF67D08-5A05-4C25-AE31-D49228DD61CE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3306-Consulta-e-Alteracao", "3306-Consulta-e-Alteracao\3306-Consulta-e-Alteracao.csproj", "{79154EF9-AEA6-4FB0-9661-46413FD328C5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3306-Consulta-e-Alteracao", "3306-Consulta-e-Alteracao\3306-Consulta-e-Alteracao.csproj", "{79154EF9-AEA6-4FB0-9661-46413FD328C5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3166-Procurando-Palavras-na-Diagonal-Principal", "3166-Procurando-Palavras-na-Diagonal-Principal\3166-Procurando-Palavras-na-Diagonal-Principal.csproj", "{0044780C-55E8-460D-A562-A4BD0E2D9561}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3166-Procurando-Palavras-na-Diagonal-Principal", "3166-Procurando-Palavras-na-Diagonal-Principal\3166-Procurando-Palavras-na-Diagonal-Principal.csproj", "{0044780C-55E8-460D-A562-A4BD0E2D9561}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3167-Procurando-Palavras-na-Diagonal-Secundaria", "3167-Procurando-Palavras-na-Diagonal-Secundaria\3167-Procurando-Palavras-na-Diagonal-Secundaria.csproj", "{191C23E1-F056-47D2-A9C2-6ED19B773D8B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -117,6 +119,10 @@ Global
 		{0044780C-55E8-460D-A562-A4BD0E2D9561}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0044780C-55E8-460D-A562-A4BD0E2D9561}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0044780C-55E8-460D-A562-A4BD0E2D9561}.Release|Any CPU.Build.0 = Release|Any CPU
+		{191C23E1-F056-47D2-A9C2-6ED19B773D8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{191C23E1-F056-47D2-A9C2-6ED19B773D8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{191C23E1-F056-47D2-A9C2-6ED19B773D8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{191C23E1-F056-47D2-A9C2-6ED19B773D8B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
