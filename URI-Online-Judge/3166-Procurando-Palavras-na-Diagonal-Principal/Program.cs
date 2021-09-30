@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Text.RegularExpressions;
 
 namespace _3166_Procurando_Palavras_na_Diagonal_Principal
@@ -26,56 +27,52 @@ namespace _3166_Procurando_Palavras_na_Diagonal_Principal
 
             for (int w = 0; w < linha; w++)
             {
-                matrix.Add(Console.ReadLine());
+                matrix.Add(Console.ReadLine().ToLower());
             }
             
             int i = 0;
             int j = 0;
 
-            var principal = "";
+            var principal = new StringBuilder("", 1000);
             for(i = 0; i<linha && i<coluna; i++)
             {
-                principal += matrix[i][i];
+                principal.Append(matrix[i][i]);
             }
             int k;
-            var acimaPrincipal = "";
+            var acimaPrincipal = new StringBuilder("", 1000);
             for (i = 0; i < linha || i < coluna; i++)
             {
                 for (j = i + 1, k = 0; j < coluna && k<linha; j++, k++)
                 {
-                    acimaPrincipal += matrix[k][j];
+                    acimaPrincipal.Append(matrix[k][j]);
                 }
-                acimaPrincipal += "|||";
+                acimaPrincipal.Append("|||");
             }
 
-            var abaixoPrincipal = "";
+            var abaixoPrincipal = new StringBuilder("", 1000);
             for (i = 1; i < linha ; i++)
             {
                 for (j = 0, k = i; j<coluna && k<linha; j++, k++)
                 {
-                    abaixoPrincipal += matrix[k][j];
+                    abaixoPrincipal.Append(matrix[k][j]);
                 }
 
-                abaixoPrincipal += "|||";
+                abaixoPrincipal.Append("|||");
             }
 
-            Console.WriteLine($"{principal}\nacima principal={acimaPrincipal}\n{abaixoPrincipal}");
 
-            principal +="|||" + new string(principal.Reverse().ToArray());
-            acimaPrincipal += "|||" + new string(acimaPrincipal.Reverse().ToArray());
-            abaixoPrincipal += "|||" + new string(abaixoPrincipal.Reverse().ToArray());
 
             foreach(var s in list)
             {
-                if(s.IsMatch(principal.ToLower()))
+                if(s.IsMatch(principal.ToString()) || s.IsMatch(new string(principal.ToString().Reverse().ToArray())))
                 {
                     Console.WriteLine($"1 Palavra \"{s}\" na diagonal principal");
                 }
-                else if (s.IsMatch(acimaPrincipal.ToLower()))
+                else if (s.IsMatch(acimaPrincipal.ToString()) || s.IsMatch(new string(acimaPrincipal.ToString().Reverse().ToArray())))
                 {
                     Console.WriteLine($"2 Palavra \"{s}\" acima da diagonal principal");
                 }
-                else if (s.IsMatch(abaixoPrincipal.ToLower()))
+                else if (s.IsMatch(abaixoPrincipal.ToString()) || s.IsMatch(new string(abaixoPrincipal.ToString().Reverse().ToArray())))
                 {
                     Console.WriteLine($"3 Palavra \"{s}\" abaixo da diagonal principal");
                 }
