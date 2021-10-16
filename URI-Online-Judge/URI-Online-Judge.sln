@@ -53,6 +53,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1244-Ordenacao-por-Tamanho"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1607-Avance-as-Letras", "1607-Avance-as-Letras\1607-Avance-as-Letras.csproj", "{534733CC-65C8-4AF0-8930-5FBF7D998922}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2693-Van", "2693-Van\2693-Van.csproj", "{AB2D05D7-F907-43A9-8F6C-D1AD6E707C8B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -159,6 +161,10 @@ Global
 		{534733CC-65C8-4AF0-8930-5FBF7D998922}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{534733CC-65C8-4AF0-8930-5FBF7D998922}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{534733CC-65C8-4AF0-8930-5FBF7D998922}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB2D05D7-F907-43A9-8F6C-D1AD6E707C8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB2D05D7-F907-43A9-8F6C-D1AD6E707C8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB2D05D7-F907-43A9-8F6C-D1AD6E707C8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB2D05D7-F907-43A9-8F6C-D1AD6E707C8B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
